@@ -1,0 +1,401 @@
+/* =========================
+   BASE
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0f0f14;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+
+header {
+    border-bottom: 1px solid #2a2a35;
+}
+
+.header-content {
+     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo img {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+/* Mobile menu button */
+
+.menu-toggle {
+    display: block;
+    background: transparent;
+    color: white;
+    border: 1px solid #2a2a35;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.75rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Mobile navigation */
+
+.header-content nav {
+    display: none;
+    width: 100%;
+}
+
+.header-content nav.open {
+    display: block;
+}
+
+.header-content nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1rem;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 450px;
+}
+
+.hero-intro {
+    color: blueviolet;
+    font-size: 1.25rem;
+    margin: 0 0 0.75rem;
+}
+
+.hero h1 {
+    margin: 0.5rem 0;
+    font-size: clamp(3rem, 12vw, 4rem);
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
+}
+
+.hero-description {
+    max-width: 450px;
+    line-height: 1.6;
+    margin: 0 0 2rem;
+}
+
+.hero-buttons {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid blueviolet;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-buttons a:first-child {
+    background-color: blueviolet;
+    color: white;
+}
+
+.hero-buttons a:last-child {
+    background-color: transparent;
+    color: blueviolet;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.projects h2,
+.services h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    color: blueviolet;
+}
+
+.projects > p,
+.services > p {
+    text-align: center;
+    color: #a0a0a8;
+    margin: 0 0 2rem;
+    font-size: 1.1rem;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.project {
+    background-color: #181820;
+    border: 1px solid #2a2a35;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 0.3s;
+}
+
+.project h3 {
+    margin: 0 0 1rem;
+    font-size: 1.4rem;
+}
+
+.project-description {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.project-tech {
+    width: fit-content;
+    background-color: #22222d;
+    padding: 0.4rem 0.7rem;
+    border-radius: 0.4rem;
+    font-size: 0.85rem;
+}
+
+.project a {
+    text-decoration: none;
+    color: blueviolet;
+    margin-top: auto;
+    transition: color 0.3s;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.service {
+    background-color: #181820;
+    border: 1px solid #2a2a35;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+
+    transition: transform 0.3s;
+}
+
+.service h3 {
+    margin: 0 0 1rem;
+    font-size: 1.4rem;
+}
+
+.service p {
+    color: #a0a0a8;
+    line-height: 1.6;
+}
+
+.service i {
+    display: block;
+    font-size: 2rem;
+    color: blueviolet;
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding: 2rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    background: linear-gradient(
+        180deg,
+        #0f0f14 20%,
+        #2b1760 80%,
+        #0f0f14 100%
+    );
+}
+
+.about-content {
+    width: 100%;
+    max-width: 500px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin: 0 0 1rem;
+}
+
+.about p {
+    line-height: 1.6;
+    color: #a0a0a8;
+}
+
+.about-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    display: block;
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.about-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+
+    border: 2px solid blueviolet;
+    border-radius: 0.5rem;
+
+    background-color: transparent;
+    color: blueviolet;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.contact h2 {
+    color: blueviolet;
+    font-size: 2rem;
+    margin: 0 0 1rem;
+}
+
+.contact > p {
+    color: #a0a0a8;
+    line-height: 1.6;
+    margin: 0 auto 2rem;
+    max-width: 500px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact-links a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+
+    border: 2px solid blueviolet;
+    border-radius: 0.5rem;
+
+    color: blueviolet;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 0;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #a0a0a8;
+    font-size: 0.9rem;
+} 

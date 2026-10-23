@@ -1,0 +1,162 @@
+@media screen and (min-width: 768px) {
+
+    /* =========================
+       HEADER / NAVBAR
+    ========================= */
+
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+        gap: 1.5rem;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+        min-height: 450px;
+        padding: 1rem;
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero h1 {
+        font-size: 5rem;
+    }
+
+    .hero-intro {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        flex-wrap: nowrap;
+    }
+
+    /* =========================
+       PROJECTS
+    ========================= */
+
+    .projects h2,
+    .services h2 {
+        font-size: 2.5rem;
+    }
+
+    .projects>p,
+    .services>p {
+        font-size: 1.25rem;
+    }
+
+    .projects-list {
+        flex-direction: row;
+    }
+
+    .project {
+        flex: 1;
+        min-height: 250px;
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .service-list {
+        flex-direction: row;
+    }
+
+    .service {
+        flex: 1;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+
+        background: linear-gradient(90deg,
+                #0f0f14 40%,
+                #2b1760 75%,
+                #0f0f14 100%);
+    }
+
+    .about-content {
+        flex: 1;
+        max-width: 500px;
+    }
+
+    .about-image {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .about-image img {
+        width: 350px;
+        max-width: 100%;
+    }
+
+    /* =========================
+       HOVER EFFECTS
+    ========================= */
+
+    nav a:hover {
+        color: blueviolet;
+    }
+
+    .hero-buttons a:hover {
+        transform: scale(1.05);
+        color: white;
+        background-color: blueviolet;
+    }
+
+    .project:hover,
+    .service:hover {
+        transform: translateY(-5px);
+    }
+
+    .project a:hover {
+        color: white;
+    }
+
+    .about-button:hover {
+        background-color: blueviolet;
+        color: white;
+        transform: scale(1.05);
+    }
+
+    .contact-links a:hover {
+        background-color: blueviolet;
+        color: white;
+        transform: scale(1.05);
+    }
+
+    /* Desktop navigation */
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .header-content nav {
+        display: block;
+        width: auto;
+    }
+
+    .header-content nav ul {
+        flex-direction: row;
+    }
+}
